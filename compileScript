@@ -1,0 +1,16 @@
+#!/bin/bash
+######################################################################
+# ** Script name: compileScript
+# ** Author: Charles Ledbetter
+# ** Date: 9/28/2018
+# ** Description: Compiles and runs the Euler programs and prints
+# ** the solutions to the console
+######################################################################
+# number of Euler problems solved in C++:
+for t in {1..14}
+do
+  echo $t:
+  g++ euler$t.cpp -o euler$t
+  ./euler$t
+  echo
+done
